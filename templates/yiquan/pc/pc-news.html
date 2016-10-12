@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>怡泉</title>
+		<link href="{{ static_url }}pc/css/news.css" type=text/css rel=stylesheet>
+		<script src="{{ static_url }}pc/js/Jquery-min-1.12.js" ></script>
+		<script type="text/javascript" src="{{ static_url }}pc/js/jquery.SuperSlide.2.1.js"></script>
+		<script src="{{ static_url }}pc/js/news.js" ></script>
+	</head>
+	<body>
+		<div class="top">
+			<em><img src="{{ static_url }}pc/img/new1.png"/></em>
+			<a><img src="{{ static_url }}pc/img/logo.png"/></a>
+			
+		</div>
+		<div class="new_img">
+			<div id="demo1" class="picBtnTop">
+				<div class="hd ul1">
+					<ul>
+						<li><img src="" /></li>
+						<li><img src="" /></li>
+						<li><img src="" /></li>
+					</ul>
+				</div>
+				<div class="bd">
+					<ul>
+						<li>
+							<div class="bg"></div>
+							<div class="pic"><a href=""><img src="" /></a></div>
+							<div class="title"><a href=""></a></div>
+						</li>
+						<li>
+							<div class="bg"></div>
+							<div class="pic"><a href=""><img src="" /></a></div>
+							<div class="title"><a href=""></a></div>
+						</li>
+						<li>
+							<div class="bg"></div>
+							<div class="pic"><a href=""><img src="" /></a></div>
+							<div class="title"><a href=""></a></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<script type="text/javascript">
+				//唯一不同：jQuery("#demo1")
+				jQuery("#demo1").slide({ mainCell:".bd ul",effect:"top",autoPlay:true,triggerTime:0,interTime:5000,delayTime:1000,easing:"easeOutElastic" });</script>
+			</div>
+		
+		<div class="footer">
+			<a href="pc-index.html"><img src="{{ static_url }}pc/img/index.png" style="width: 320px;"/></a>
+			<a href="pc-product.html"><img src="{{ static_url }}pc/img/index2.png"/></a>
+			<a href="http://newboys.test.yoho.cn/activity/default/index"><img src="{{ static_url }}pc/img/index3.png"/></a>
+		</div>
+		
+		<div class="wx">
+			<i><img src="{{ static_url }}pc/img/wx.jpg"/></i>
+			<p>扫码创潮品</p>
+		</div>
+		
+		
+		
+		<a class="ba" style=" position: fixed;right:30px; bottom: 10px; color:#000;font-size: 12px;">苏ICP备16007333号-1</a>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<title></title>
+		<link href="{{ static_url }}css/core.css" rel="stylesheet" type="text/css">
+		<link href="{{ static_url }}css/dialog.css" rel="stylesheet" type="text/css">
+		<link href="{{ static_url }}css/lottery.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="banner">
+			<div class="turnplate">
+				<canvas class="item" id="wheelcanvas" width="422px" height="422px"></canvas>
+				<img class="pointer" src="{{ static_url }}images/turnplate-pointer.png"/>
+			</div>
+		</div>
+		<img src="{{ static_url }}images/1.png" id="shan-img" style="display:none;" />
+		<img src="{{ static_url }}images/2.png" id="sorry-img" style="display:none;" />
+		<p class="p_tips">每天签到免费一次抽奖机会奥</p>
+		<!-- 代码 结束 -->
+		<script src="{{ static_url }}js/plugins/zepto.min.js"></script>
+		<script src="{{ static_url }}js/plugins/zepto.cookie.min.js"></script>
+		<script src="{{ static_url }}js/plugins/zepto.fx.min.js"></script>
+		<script src="{{ static_url }}js/plugins/zepto.selector.min.js"></script>
+		<script src="{{ static_url }}js/plugins/common.js"></script>
+		<script src="{{ static_url }}js/plugins/jquery-1.8.3.min.js"></script>
+		<script src="{{ static_url }}js/plugins/awardRotate.js"></script>
+		<script src="{{ static_url }}js/app/dialog.js"></script>
+		<script src="{{ static_url }}js/app/lottery.js"></script>
+	</body>
+</html>

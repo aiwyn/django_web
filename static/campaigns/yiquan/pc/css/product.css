@@ -1,0 +1,300 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	min-width: 1060px;
+}
+html{
+	background: url(../img/index4.jpg) no-repeat  left top;
+	
+	background-size:100% 100%;
+}
+body{
+	position: relative;
+}
+a img{
+	border:none;
+}
+a{
+	text-decoration: none;
+}
+.none{
+	display: none;
+}
+li{
+	list-style: none;
+}
+.top{
+	padding-top: 30px;
+	width: 1000px;
+	height: 217px;
+	overflow: hidden;
+	margin:0px auto 20px;
+}
+.top em{
+	display: inline-block;
+	float: left;
+}
+.top a{
+	display: inline-block;
+	float: right;
+}
+
+.footer{
+	width: 1060px;
+	margin: auto;
+	overflow: hidden;
+}
+.footer a{
+	display:inline-block;
+	float: left;
+	
+}
+.search{
+	line-height: 35px;
+	width: 830px;
+	margin: auto;
+	height:35px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.search_left{
+	float:left;
+	width: 220px;
+}
+.search_left span{
+	display: inline-block;
+	margin-right: 10px;
+	
+}
+.sp1,.sp2{
+	cursor: pointer;
+	opacity:0.5;
+}
+.search_left span.active{
+	opacity:1;
+}
+.search_left span img{
+	vertical-align: middle;
+}
+.search_right{
+	float: right;
+	width: 500px;
+	height: 35px;
+	overflow: hidden;
+}
+.search_right img{
+	vertical-align: middle;
+}
+.search_tip{
+	float: left;
+	height: 35px;
+	display: inline-block;
+	width: 123px;
+}
+input[name=number]{
+	float: left;
+	margin-left: 10px;
+	height: 35px;
+	background-color: #fff;
+	border:none;
+	width:260px ;
+	padding-left: 10px;
+	font-size: 14px;
+}
+input[name=number]:focus{
+	outline: none;
+}
+.but_search{
+	display: inline-block;
+	float: left;
+	width: 97px;
+	height: 35px;
+	cursor: pointer;
+}
+
+.products{
+	width: 1000px;
+	margin: auto;
+	height: 420px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.but_left{
+	float: left;
+	display: block;
+	width: 46px;
+	height: 64px;
+	padding-top: 181px;
+	cursor: pointer;
+}
+.but_right{
+	float: right;
+	display: block;
+	width: 46px;
+	height: 64px;
+	padding-top: 181px;
+	cursor: pointer;
+}
+
+.product_list{
+	width: 860px;
+	height: 420px;
+	overflow: hidden;
+	float: left;
+	margin-left: 26px;
+}
+.ul_list{
+	width: 870px;
+	overflow: hidden;
+}
+.product_list li{
+	padding: 5px;
+	width: 268px;
+	height: 116px;
+	float: left;
+	margin-right: 12px;
+	margin-bottom: 12px;
+	background-color: #000;
+	cursor: pointer;
+}
+.li_left{
+	padding-top:6px;
+	display: block;
+	float: left;
+	width: 101px;
+	height: 104px;
+	overflow: hidden;
+}
+.li_left img{
+	width: 100%;
+}
+.li_right{
+	float: right;
+	width: 143px;
+	height: 100%;
+	background: url(../img/xx.png) no-repeat right bottom;
+}
+.li_right p{
+	color:#ffd900;
+	line-height: 28px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.li_right p span{
+	margin-left: 5px;
+}
+
+/*弹框*/
+.dialog{
+	position: fixed;
+	left:0px;
+	top:0px;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+}
+.dialog_wrap{
+	position: absolute;
+	left:50%;
+	margin-left: -240px;
+	top:50%;
+	margin-top: -280px;
+	background-color: #000;
+	border:4px solid #cbae0a;
+	border-radius: 5px;
+	width: 340px;
+	height: 500px;
+	padding: 30px 70px;
+	
+}
+.close{
+	width: 52px;
+	height: 55px;
+	position: absolute;
+	right:-25px;
+	top:-22px;
+	cursor: pointer;
+	transition:all 0.5s;
+}
+.pro_img{
+	display: block;
+	width:340px;
+	margin:0px auto 20px;
+	text-align: center;
+}
+.pro_img img{
+	max-width: 100%;
+}
+.pro_ulData{
+	width: 340px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.pro_ulData li{
+	
+	float: left;
+	width: 150px;
+	padding-left: 20px;
+	font-size: 26px;
+	color:#e8c60a;
+	font-weight: bold;
+	font-family: "arial, helvetica, sans-serif";
+	font-style: italic;
+}
+.tp_but{
+	width: 61px;
+	height: 54px;
+	margin: auto;
+	display: block;
+	cursor: pointer;
+}
+
+.active{
+	animation: active 0.5s backwards;
+}
+@keyframes active{
+	0%{
+		transform: scale(0.9);
+	}
+	50%{
+		transform: scale(1.05);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+.wx{
+	position: absolute;
+	right:30px;
+	top:350px;
+	width: 169px;
+	height: 171px;
+	padding-top: 66px;
+	background: url(../img/index5.png) no-repeat center top;
+}
+.wx i{
+	margin: auto;
+	display: block;
+	width: 107px;
+	height: 106px;
+	margin-bottom: 5px;
+}
+.wx i img{
+	width: 107px;
+	height: 106px;
+}
+.wx p{
+	width: 107px;
+	margin: auto;
+	text-align: center;
+	color: #000;
+	font-size: 18px;
+	font-weight: bold;
+}

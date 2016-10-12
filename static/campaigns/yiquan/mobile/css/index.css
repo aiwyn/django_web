@@ -1,0 +1,46 @@
+
+#wxindex_hd{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: url(../img/wx_index2.jpg) no-repeat center top #000;
+	background-size: cover;
+	position: relative;
+	opacity: 0;
+	-webkit-animation: Indexanimait1 0.9s forwards cubic-bezier(1,-1.69,0,1.81);
+}
+#wxindex_hd a{
+	position: absolute;
+	bottom:3%;
+	right:5%;
+	width: 50%;
+	opacity: 0;
+	-webkit-animation: Indexanimait2 1s 0.9s forwards infinite ;
+}
+#wxindex_hd a img{
+	width: 100%;
+}
+@-webkit-keyframes Indexanimait1{
+	0%{
+		transform: scale(3);
+		opacity: 0;
+	}
+	100%{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+@-webkit-keyframes Indexanimait2{
+	0%,10%,20%,30%,40%{
+		transform:rotate(5deg);
+		opacity: 1;
+	}
+	5%,15%,25%,35%,45%{
+		transform:rotate(-5deg);
+		opacity: 1;
+	}
+	50%,55%,60%,65%,70%,75%,80%,85%,90%,95%,100%{
+		transform:rotate(0deg);
+		opacity: 1;
+	}
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title>芬达-在线制作</title>
+		<link href="{{ static_url }}mobile/css/public.css{{ weixin_debug }}" type=text/css rel=stylesheet>
+		<link href="{{ static_url }}mobile/css/make.css{{ weixin_debug }}" type=text/css rel=stylesheet>
+		<script type="text/javascript" src="{{ static_url }}mobile/js/Jquery-min-1.12.js{{ weixin_debug }}"></script>
+		<script type="text/javascript" src="{{ static_url }}mobile/js/jquery.SuperSlide.2.1.js{{ weixin_debug }}"></script>
+		<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script src="{{ static_url }}mobile/jjs/wx-share.js"></script>
+		<script src="{{ static_url }}mobile/js/make.js{{ weixin_debug }}" type="text/javascript"></script>
+	</head>
+	<body>
+		<header id="top_img">
+			<img src="{{ static_url }}mobile/img/title1.png" />
+		</header>
+		<section id="main">
+			<div class="box1">
+			<h1 class="none"><img src="{{ static_url }}mobile/img/my_title.png"/></h1>
+			<div class="box" id="box_canvas">
+				 <canvas id="canvas"></canvas>
+				<!--<em><img src="{{ static_url }}mobile/img/fd0.png"/></em>-->
+			</div>
+			<p class="buts">
+				<span><i>燃烧</i></span>
+				<span><i>脸型</i></span>
+				<span><i>五官</i></span>
+				<span><i>发型</i></span>
+			</p>
+			<!--列表-->
+			<div class="lists">
+				<div class="list small_pro">
+					<p>
+						<em><img id="bg1"  src="{{ static_url }}mobile/img/fd0.png" data-kit-style="static" data-kit-group="bg"  data-kit-index="1" class="kit"/></em>
+						<em><img src="{{ static_url }}mobile/img/fd1.png" data-kit-style="static" data-kit-group="bg"  data-kit-index="2" class="kit"/></em>
+					</p>
+				</div>
+				<div class="list  picScroll-left">
+					<!--五官列表-->
+					<div class="steps">
+						<a class="but_left next"></a>
+						<a class="but_right prev"></a>
+						<div class="steps_box">
+							<div class="solider_div bd">
+								<ul class="picList img_w">
+									<li><em><img src="{{ static_url }}mobile/img/step4/step4-1.png" data-kit-group="face" data-kit-index="3" class="kit"></em></li>
+									<li><em><img src="{{ static_url }}mobile/img/step4/step4-2.png" data-kit-group="face" data-kit-index="4" class="kit"></em></li>
+									<li><em><img src="{{ static_url }}mobile/img/step4/step4-3.png" data-kit-group="face" data-kit-index="5" class="kit"></em></li>
+									<li><em><img src="{{ static_url }}mobile/img/step4/step4-4.png" data-kit-group="face" data-kit-index="6" class="kit"></em></li>
+									<li><em><img src="{{ static_url }}mobile/img/step4/step4-5.png" data-kit-group="face" data-kit-index="7" class="kit"></em></li>
+									<li><em><img src="{{ static_url }}mobile/img/step4/step4-6.png" data-kit-group="face" data-kit-index="8" class="kit"></em></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			<script  type="text/javascript" id="jsID">
+				jQuery(".picScroll-left").slide({titCell:"",mainCell:".bd ul",autoPage:true,effect:"left",scroll:3,vis:3,trigger:"click"});
+			</script>
+				<div class="list picScroll-left1">
+					<div class="steps">
+						<a class="but_left next"></a>
+						<a class="but_right prev" ></a>
+						<div class="steps_box">
+							<div class="solider_div bd1">
+								<ul class="overview img_w">
+									<li><em><img src="{{ static_url }}mobile/img/step2/step2-1.png" data-kit-group="study" data-kit-index="9" class="kit"></em></li>
+									<li><em><img src="{{ static_url }}mobile/img/step2/step2-2.png" data-kit-group="study" data-kit-index="10" class="kit"></em></li>
+									<li><em><img src="{{ static_url }}mobile/img/step2/step2-3.png" data-kit-group="study" data-kit-index="11" class="kit"></em></li>
+									<li><em><img src="{{ static_url }}mobile/img/step2/step2-4.png" data-kit-group="study" data-kit-index="12" class="kit"></em></li>
+									<li><em><img src="{{ static_url }}mobile/img/step2/step2-5.png" data-kit-group="study" data-kit-index="13" class="kit"></em></li>
+									<li><em><img src="{{ static_url }}mobile/img/step2/step2-6.png" data-kit-group="study" data-kit-index="14" class="kit"></em></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script  type="text/javascript" id="jsID">
+					jQuery(".picScroll-left1").slide({titCell:"",mainCell:".bd1 ul",autoPage:true,effect:"left",scroll:3,vis:3,trigger:"click"});
+				</script>
+				<div class="list picScroll-left2">
+					<div class="steps">
+						<a class="but_left next"></a>
+						<a class="but_right prev"></a>
+						<div class="steps_box">
+							<div class="solider_div bd2">
+								<ul class="overview img_w">
+									<li><em><img src="{{ static_url }}mobile/img/step3/step3-1.png" data-kit-group="hair" data-kit-index="15" class="kit"></em></li>
+									<li><em><img src="{{ static_url }}mobile/img/step3/step3-2.png" data-kit-group="hair" data-kit-index="16" class="kit"></em></li>
+									<li><em><img src="{{ static_url }}mobile/img/step3/step3-3.png" data-kit-group="hair" data-kit-index="17" class="kit"></em></li>
+									<li><em><img src="{{ static_url }}mobile/img/step3/step3-4.png" data-kit-group="hair" data-kit-index="18" class="kit"></em></li>
+									<li><em><img src="{{ static_url }}mobile/img/step3/step3-5.png" data-kit-group="hair" data-kit-index="19" class="kit"></em></li>
+									<li><em><img src="{{ static_url }}mobile/img/step3/step3-6.png" data-kit-group="hair" data-kit-index="20" class="kit"></em></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script  type="text/javascript" id="jsID">
+				jQuery(".picScroll-left2").slide({titCell:"",mainCell:".bd2 ul",autoPage:true,effect:"left",scroll:3,vis:3,trigger:"click"});
+			</script>
+			<p class="submit_back sub1" id="final_but">
+				<em><img src="{{ static_url }}mobile/img/submit.png" /></em>
+			</p>
+			</div>
+			
+			
+			<div class="box2 none">
+				<div class="step_1">
+					<em><img src="{{ static_url }}mobile/img/info_title.png"></em>
+				</div>
+				<table class="Table" cellpadding="0" cellspacing="0" >
+					<tr>
+						<td><img src="{{ static_url }}mobile/img/name.png"/></td>
+						<td><input type="text" class="name"/></td>
+					</tr>
+					<tr>
+						<td><img src="{{ static_url }}mobile/img/phone.png"/></td>
+						<td><input type="tel" class="phone"/></td>
+					</tr>
+					<tr>
+						<td><img src="{{ static_url }}mobile/img/workName.png"/></td>
+						<td><input type="text" class="workName"/></td>
+					</tr>
+					<tr>
+						<td><img src="{{ static_url }}mobile/img/yx.png"/></td>
+						<td><input type="text" class="yx"/></td>
+					</tr>
+				</table>
+				<p class="submit_back sub2">
+					<em class="cj_submit"><img src="{{ static_url }}mobile/img/confirm.png" /></em>
+				</p>
+			</div>
+		</section>
+		
+		<!--弹框提示-->
+		
+		<div class="dialog_wrap none">
+			<div class="dialog">
+				<div class="content">
+					<em><img src="{{ static_url }}mobile/img/ren.png"/></em>
+					<h1>请至少选择一项制作元素</h1>
+					<a class="close_a"><img src="{{ static_url }}mobile/img/qr.png"/></a>
+				</div>
+			</div>
+		</div>
+		<script src="{{ static_url }}mobile/js/FabricCustom.js{{ weixin_debug }}"></script>
+    	<script src="{{ static_url }}mobile/js/DIYCanvas.js{{ weixin_debug }}"></script>
+	</body>
+</html>

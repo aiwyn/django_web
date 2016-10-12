@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title>芬达-上传作品</title>
+		<link href="{{ static_url }}mobile/css/public.css{{ weixin_debug }}" type=text/css rel=stylesheet>
+		<link href="{{ static_url }}mobile/css/uploadPro.css{{ weixin_debug }}" type=text/css rel=stylesheet>
+		<script type="text/javascript" src="{{ static_url }}mobile/js/Jquery-min-1.12.js{{ weixin_debug }}"></script>
+		<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script src="{{ static_url }}mobile/js/wx-share.js"></script>
+		<script src="{{ static_url }}mobile/js/uploadPro.js{{ weixin_debug }}" type="text/javascript"></script>
+	</head>
+	<body>
+		
+		<header id="top_img">
+			<img src="{{ static_url }}mobile/img/title1.png" />
+		</header>
+		<section id="main">
+			<div class="main_box1">
+				<div class="box ">
+				<h1><img src="{{ static_url }}mobile/img/my_title.png"/></h1>
+				<div class="box_wrap">
+					<div class="box_left">
+						<div class="box_img" id="box_canvas">
+							<canvas id="canvas"></canvas>
+						</div>
+					</div>
+					
+				</div>
+			</div>	
+			<p class="submit_back">
+				<label class="reset_but shake">
+					<input type="file" class="none"  id="File"/>
+					<img src="{{ static_url }}mobile/img/upload.png" class="img1"/>
+					<img src="{{ static_url }}mobile/img/upload1.png" class="img2 none"/>
+				</label>
+				<a class="qrtj"><img src="{{ static_url }}mobile/img/qrtj.png" /></a>
+			</p>
+				
+			</div>
+			
+			<div class="main_box2 none">
+				
+				<div class="step_1">
+					<em><img src="{{ static_url }}mobile/img/info_title.png"></em>
+				</div>
+				<table class="Table" cellpadding="0" cellspacing="0" >
+					<tr>
+						<td><img src="{{ static_url }}mobile/img/name.png"/></td>
+						<td><input type="text" class="name"/></td>
+					</tr>
+					<tr>
+						<td><img src="{{ static_url }}mobile/img/phone.png"/></td>
+						<td><input type="tel" class="phone"/></td>
+					</tr>
+					<tr>
+						<td><img src="{{ static_url }}mobile/img/workName.png"/></td>
+						<td><input type="text" class="workName"/></td>
+					</tr>
+					<tr>
+						<td><img src="{{ static_url }}mobile/img/yx.png"/></td>
+						<td><input type="text" class="yx"/></td>
+					</tr>
+				</table>
+				<p class="submit_back sub2">
+					<em class="cj_submit"><img src="{{ static_url }}mobile/img/confirm.png" /></em>
+				</p>
+			
+			</div>
+			
+		</section>
+		
+		<!--弹框提示-->
+		
+		<div class="dialog_wrap none">
+			<div class="dialog">
+				<div class="content">
+					<em><img src="{{ static_url }}mobile/img/ren.png"/></em>
+					<h1>上传失败</h1>
+					<p></p>
+					<a class="close_a"><img src="{{ static_url }}mobile/img/qr.png"/></a>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

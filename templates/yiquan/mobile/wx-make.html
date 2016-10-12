@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title>怡泉</title>
+		<link rel="stylesheet" href="{{ static_url }}mobile/css/reset.css" />
+		<link rel="stylesheet" href="{{ static_url }}mobile/css/dialog.css" />
+		<link rel="stylesheet" href="{{ static_url }}mobile/css/make.css" />
+	</head>
+	<body>
+		<header>
+			<img src="{{ static_url }}mobile/img/make2.png"/>
+		</header>
+		<img src="{{ static_url }}mobile/img/control.png" id="controlImage" style="display:none">
+		<section id="main_box">
+			<div class="canvas_wrap">
+				<div class="canvas_img">
+					<em class="em1"><img src="{{ static_url }}mobile/img/yifu/1.png"/></em>
+					<div id="box_canvas">
+						<canvas id="canvas" style="border:2px dotted #cac6c0;"></canvas>
+					</div>
+				</div>
+				<div class="canvas_img vH">
+					<em class="em1"><img src="{{ static_url }}mobile/img/yifu/2.png"/></em>
+					<div id="box_canvas">
+						<canvas id="canvas2" style="border:2px dotted #cac6c0;"></canvas>
+					</div>
+				</div>
+			</div>	
+			<div id="firStep" class="main_wrap">
+				<div class="main_left">
+					<span>S</span>
+					<span>M</span>
+					<span>L</span>
+					<span>XL</span>
+					<i><img src="{{ static_url }}mobile/img/make5.png"/></i>
+				</div>
+				<div class="main_right">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<i><img src="{{ static_url }}mobile/img/make4.png"/></i>
+				</div>
+			</div>
+			<div id="nextStep" class="main_wrap none">
+				<div class="main_left widthClas">
+					<div class="text"><img src="{{ static_url }}mobile/img/make8.png"/></div>
+					<div class="top_but"><img src="{{ static_url }}mobile/img/make12.png"/></div>
+					<div class="list">
+						<ul>
+							<li><img src="{{ static_url }}mobile/img/text/t1.png" data-kit-group="chaoTu" data-kit-index="1" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/text/t2.png" data-kit-group="chaoTu" data-kit-index="2" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/text/t3.png" data-kit-group="chaoTu" data-kit-index="3" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/text/t4.png" data-kit-group="chaoTu" data-kit-index="4" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/text/t5.png" data-kit-group="chaoTu" data-kit-index="5" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/text/t6.png" data-kit-group="chaoTu" data-kit-index="6" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/text/t7.png" data-kit-group="chaoTu" data-kit-index="7" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/text/t8.png" data-kit-group="chaoTu" data-kit-index="8" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/text/t9.png" data-kit-group="chaoTu" data-kit-index="9" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/text/t10.png" data-kit-group="chaoTu" data-kit-index="10" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/text/t11.png" data-kit-group="chaoTu" data-kit-index="11" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/text/t12.png" data-kit-group="chaoTu" data-kit-index="12" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/text/t13.png" data-kit-group="chaoTu" data-kit-index="13" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/text/t14.png" data-kit-group="chaoTu" data-kit-index="14" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/text/t15.png" data-kit-group="chaoTu" data-kit-index="15" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/text/t16.png" data-kit-group="chaoTu" data-kit-index="16" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/text/t17.png" data-kit-group="chaoTu" data-kit-index="17" class="kit"/></li>
+						</ul>
+					</div>
+					<div class="botton_but"><img src="{{ static_url }}mobile/img/make11.png"/></div>
+				</div>
+				<div class="main_right widthClas">
+					
+					<div class="text"><img src="{{ static_url }}mobile/img/make7.png"/></div>
+					<div class="top_but"><img src="{{ static_url }}mobile/img/make12.png"/></div>
+					<div class="list">
+						<ul>
+							<li><img src="{{ static_url }}mobile/img/tuan/1.png" data-kit-group="c" data-kit-index="18" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/2.png" data-kit-group="c" data-kit-index="19" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/3.png" data-kit-group="c" data-kit-index="20" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/4.png" data-kit-group="c" data-kit-index="21" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/5.png" data-kit-group="c" data-kit-index="22" class="kit"/></li>
+							
+							<li><img src="{{ static_url }}mobile/img/tuan/6.png" data-kit-group="c" data-kit-index="23" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/7.png" data-kit-group="c" data-kit-index="24" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/8.png" data-kit-group="c" data-kit-index="25" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/9.png" data-kit-group="c" data-kit-index="26" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/10.png" data-kit-group="c" data-kit-index="27" class="kit"/></li>
+							
+							<li><img src="{{ static_url }}mobile/img/tuan/11.png" data-kit-group="c" data-kit-index="28" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/12.png" data-kit-group="c" data-kit-index="29" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/13.png" data-kit-group="c" data-kit-index="30" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/14.png" data-kit-group="c" data-kit-index="31" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/15.png" data-kit-group="c" data-kit-index="32" class="kit"/></li>
+							
+							<li><img src="{{ static_url }}mobile/img/tuan/16.png" data-kit-group="c" data-kit-index="33" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/17.png" data-kit-group="c" data-kit-index="34" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/18.png" data-kit-group="c" data-kit-index="35" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/19.png" data-kit-group="c" data-kit-index="36" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/20.png" data-kit-group="c" data-kit-index="37" class="kit"/></li>
+							
+							<li><img src="{{ static_url }}mobile/img/tuan/21.png" data-kit-group="c" data-kit-index="38" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/22.png" data-kit-group="c" data-kit-index="39" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/23.png" data-kit-group="c" data-kit-index="40" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/24.png" data-kit-group="c" data-kit-index="41" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/25.png" data-kit-group="c" data-kit-index="42" class="kit"/></li>
+							
+							<li><img src="{{ static_url }}mobile/img/tuan/26.png" data-kit-group="c" data-kit-index="43" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/27.png" data-kit-group="c" data-kit-index="44" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/28.png" data-kit-group="c" data-kit-index="45" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/29.png" data-kit-group="c" data-kit-index="46" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/30.png" data-kit-group="c" data-kit-index="47" class="kit"/></li>
+							
+							<li><img src="{{ static_url }}mobile/img/tuan/31.png" data-kit-group="c" data-kit-index="48" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/32.png" data-kit-group="c" data-kit-index="49" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/33.png" data-kit-group="c" data-kit-index="50" class="kit"/></li>
+							<li><img src="{{ static_url }}mobile/img/tuan/34.png" data-kit-group="c" data-kit-index="51" class="kit"/></li>
+						</ul>
+					</div>
+					<div class="botton_but"><img src="{{ static_url }}mobile/img/make11.png"/></div>
+					
+				</div>
+			</div>
+			<div id="footer_but">
+				<div class="firstStep_but nextBut">
+					<img src="{{ static_url }}mobile/img/make1.png"/>
+				</div>
+				<div class="nestButs none">
+					<div class="canvas_but1">
+						<a class="filp"><img src="{{ static_url }}mobile/img/make13.png"/></a><a class="empty"><img src="{{ static_url }}mobile/img/make14.png"/></a>
+					</div>
+					<div class="canvas_but2">
+						<a class="back_a"><img src="{{ static_url }}mobile/img/make10.png"/></a>
+						<a class="upload_but"><img src="{{ static_url }}mobile/img/make9.png"/></a>
+					</div>
+				</div>
+			</div>
+		</section>
+	<script src="{{ static_url }}mobile/js/plugins/zepto.min.js"></script>
+	<script src="{{ static_url }}mobile/js/plugins/zepto.fx.min.js"></script>
+	<script src="{{ static_url }}mobile/js/plugins/common.js"></script>
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="{{ static_url }}mobile/js/plugins/wx-share.js"></script>
+	<script src="{{ static_url }}mobile/js/plugins/FabricCustom.js"></script>
+    <script src="{{ static_url }}mobile/js/plugins/DIYCanvas.js"></script>
+    <script src="{{ static_url }}mobile/js/plugins/exif.js"></script>
+    <script src="{{ static_url }}mobile/js/plugins/PhotoCanvas.js"></script>
+	<script src="{{ static_url }}mobile/js/app/make.js" type="text/javascript"></script>
+	<script src="{{ static_url }}mobile/js/app/DIYMake.js" type="text/javascript"></script>
+	</body>
+</html>

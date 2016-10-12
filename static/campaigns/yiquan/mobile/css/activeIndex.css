@@ -1,0 +1,25 @@
+#active{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	background: url(../img/mark9.jpg) no-repeat;
+	 background-size:100% 100%;
+	 text-align: center;
+}
+#active i{
+	display: block;
+	padding: 6% 1% 3%;
+	box-sizing: border-box;
+	width: 90%;
+	margin:0px auto 10%;
+}
+#active article{
+	display: block;
+	width: 90%;
+	margin: auto;
+}
+#active article a{
+	display: inline-block;
+	width: 46%;
+	margin: 0px 1%;
+}

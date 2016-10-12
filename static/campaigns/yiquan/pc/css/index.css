@@ -1,0 +1,75 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	overflow-y: auto;
+	min-width: 1060px;
+}
+html{
+	background: url(../img/index4.jpg) no-repeat  left top;
+	
+	background-size:100% 100%;
+}
+body{
+	position: relative;
+}
+.wx{
+	position: absolute;
+	right:50px;
+	top:350px;
+	width: 169px;
+	height: 171px;
+	padding-top: 66px;
+	background: url(../img/index5.png) no-repeat center top;
+}
+.wx i{
+	margin: auto;
+	display: block;
+	width: 107px;
+	height: 106px;
+	margin-bottom: 5px;
+}
+.wx i img{
+	width: 107px;
+	height: 106px;
+}
+.wx p{
+	width: 107px;
+	margin: auto;
+	text-align: center;
+	color: #000;
+	font-size: 18px;
+	font-weight: bold;
+}
+.footer{
+	width: 1060px;
+	margin: auto;
+	overflow: hidden;
+}
+.footer a{
+	display:inline-block;
+	float: left;
+	
+}
+.img{
+	padding-top: 60px;
+	width: 993px;
+	height: 706px;
+	position: relative;
+	margin: auto;
+	margin-bottom: 30px;
+}
+.img a{
+	position: absolute;
+	right:-30px;
+	top:10px;
+}
+
+
+
+
+
+
+
+
+

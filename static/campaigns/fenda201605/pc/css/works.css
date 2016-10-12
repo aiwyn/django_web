@@ -1,0 +1,409 @@
+html,body{
+	width: 100%;
+}
+a{
+	text-decoration: none;
+	color:#000;
+}
+img{ display: block;}
+#top_img{
+	margin: 15px auto;
+	width: 48%;
+	margin-bottom: 2%;
+}
+#top_img img{
+	width: 100%;
+}
+#main{
+	width: 1200px;
+	margin:0px auto;
+}
+.submit_pro{
+	width:1040px;
+	overflow: hidden;
+	margin: auto;
+	margin-bottom: 10px;
+}
+.submit_pro frame{
+	width: 100%;
+	
+}
+.submit_pro form>span{
+	margin-top: 8px;
+	float: left;
+	display: block;
+	width: 141px;
+	height: 36px;
+}
+.submit_pro span img{
+	width: 141px;
+	height: 36px;
+}
+input[name=pro_name]{
+	padding-left: 20px;
+	float: left;
+	margin-left:20px;
+	height: 46px;
+	line-height: 46px;
+	width: 267px;
+	border-radius:25px;
+	border:3px solid #E9A54B;
+	background-color: #fff;
+	font-size: 22px;
+}
+input[type=submit]{
+	margin-left: 20px;
+	float: left;
+	background:url(../img/search.png) center  no-repeat;
+	width: 134px;
+	height: 54px;
+	border:none;
+	cursor: pointer;
+}
+input:focus{
+	outline: none;
+}
+.device{
+	min-height: 600px;
+	overflow: hidden;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.swiper-wrapper{
+}
+.singerUrl{
+	width: 100%;
+	padding-top: 10px;
+	float: left;
+}
+.singerUrl li{
+	width: 265px;
+	float: left;
+	margin: 0px 30px 20px 0px;
+	position: relative;
+	cursor: pointer;
+}
+
+.singerUrl li:nth-of-type(4n){
+	
+}
+.singerUrl li i{
+	position: absolute;
+	top:-14px;
+	left:-19px;
+	width:80px;
+}
+.singerUrl li i img{
+	width: 100%;
+}
+.singerUrl li em{
+	line-height: 352px;
+	border:3px solid #000;
+	box-sizing: border-box;
+	display: block;
+	width: 259px;
+	height: 352px;
+	overflow: hidden;
+	display: inline-block;
+	/*display:-moz-box;
+	-moz-box-pack: center;
+	-moz-box-align: center;*/
+	
+	display:-webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	
+	display:box;
+	box-pack: center;
+	box-align: center;
+}
+.singerUrl li em img{
+	width: 100%;
+	vertical-align: middle;
+	display:inline;
+}
+
+.singerUrl li .pro_name{
+	font-family: "微软雅黑";
+	padding: 0px 4px;
+	position: relative;
+	z-index: 4;
+	white-space: nowrap;
+	
+	width:211px;
+	height: 30px;
+	line-height: 30px;
+	box-sizing: border-box;
+	font-size: 16px;
+	text-align: center;
+	background-color:#DE7843;
+	color:#000000;
+	border:3px solid #000;
+	margin: -14px auto 0px;
+}
+.singerUrl li .pro_name span:nth-of-type(1){
+	margin-right:4%;
+}
+
+.datas{
+	display: block;
+	width: 100%;
+	color:#000;
+	font-size: 14px;
+	padding-top: 4px;
+	text-align: center;
+	line-height: 20px;
+}
+.datas p{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.buts{
+	width: 500px;
+	height: 40px;
+	margin: auto;
+	text-align: center;
+	overflow: hidden;
+}
+.buts a{
+	display: inline-block;
+	height: 40px;
+	vertical-align: middle;
+	
+}
+.buts a.arrow-left, .buts a.arrow-right{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	cursor: pointer;
+}
+.back_a{
+	display: block;
+	padding-top: 20px;
+	margin: auto;
+	width: 97px;
+	height: 27px;
+}
+.buts a img{
+	width: 60%;
+}
+.pagination{
+	height: 40px;
+	line-height: 40px;
+}
+.pagination span{
+	color:#f2721d;
+	margin: 0px 25px;
+	font-size: 36px;
+	font-family: "arial, helvetica, sans-serif";
+	font-weight: bold;
+}
+.pagination span.swiper-active-switch{
+	color:#000000
+}
+.radio{
+	padding-top: 10px;
+	float: left;
+	margin-left: 50px;
+	width: 370px;
+	overflow: hidden;
+}
+.radio label{
+	width: 150px;
+	float: left;
+	display: block;
+	cursor: pointer;
+}
+.radio label:nth-of-type(2){
+	margin-left: 20px;
+}
+.radio label p{
+	width: 100%;
+	overflow: hidden;
+	display:-moz-box;
+	-moz-box-pack: center;
+	-moz-box-align: center;
+	
+	display:-webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	
+	display:box;
+	box-pack: center;
+	box-align: center;
+}
+.radio label input{
+	display: none;
+}
+.radio label input:checked+p>span{
+	background: url(../img/dui.png) no-repeat center;
+	background-color: #fff;
+	background-size: 100%;
+}
+.radio label p span{
+	
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	border:1px solid #EE7066;
+	background-color: #fff;
+}
+.radio label p em{
+	width: 98px;
+	height: 26px;
+	display: block;
+	margin-left: 5px;
+}
+.radio label p em img{
+	width: 98px;
+	height: 26px;
+}
+.swiper-container{
+}
+#wrap_footer{
+	position: static;
+}
+.swiper-container{
+	cursor: default !important;
+}
+
+/*弹框*/
+.dialog_wrap{
+	position: fixed;
+	left:0px;
+	top:0px;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+}
+.dialog{
+	text-align: center;
+	position: absolute;
+	left:50%;
+	margin-left: -210px;
+	top:50%;
+	margin-top:-320px;
+	background: url(../img/border.png)  no-repeat center #fdf3db;
+	background-size: 100% 100%;
+	border-radius: 40px;
+	width: 280px;
+	padding: 40px 70px;
+}
+.close_a{
+	position: absolute;
+	right:30px;
+	top:40px;
+	cursor: pointer;
+	-webkit-transition:all 0.5s;
+	transition:all 0.5s;
+}
+.content{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	
+	color:#f39800;
+}
+.content em{
+	display: block;
+	width: 200px;
+	height: 274px;
+	margin: auto;
+	border:2px solid #000;
+	display: inline-block;
+	line-height: 274px;
+	display:-webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	
+	display:box;
+	box-pack: center;
+	box-align: center;
+}
+.content img{
+	width: 100%;
+	vertical-align: middle;
+	display: inline-block;
+}
+.content p{
+	line-height: 24px;
+	color:#ed7233;
+	font-size: 14px;
+}
+.content p.pro_name1{
+	font-family: "微软雅黑";
+	padding: 0px 4px;
+	position: relative;
+	z-index: 4;
+	white-space: nowrap;
+	
+	width:160px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	text-align: center;
+	background-color:#DE7843;
+	color:#000000;
+	border:3px solid #000;
+	margin: -14px auto 10px;
+}
+.content p.No{
+	font-size: 34px;
+	font-weight: bold;
+	color:#ed7233;
+}
+.vote{
+	width: 220px;
+	display: block;
+	margin:10px auto;
+	cursor: pointer;
+}
+.vote img{
+	width: 100%;
+}
+.content p.tpts{
+	font-size: 12px;
+	color:#707070;
+}
+.shake{
+	padding-left: 71px ;
+	background: url(../img/shake.png) no-repeat left center;
+	width: 170px;
+	margin: auto;
+	height: 35px;
+}
+.active{
+	-webkit-animation: active 0.5s backwards;
+	animation: active 0.5s backwards;
+}
+@-webkit-keyframes active{
+	0%{
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+	50%{
+		-webkit-transform: scale(1.05);
+		transform: scale(1.05);
+	}
+	100%{
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+@keyframes active{
+	0%{
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+	50%{
+		-webkit-transform: scale(1.05);
+		transform: scale(1.05);
+	}
+	100%{
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title>芬达-制作结果</title>
+		<link href="{{ static_url }}mobile/css/public.css{{ weixin_debug }}" type=text/css rel=stylesheet>
+		<link href="{{ static_url }}mobile/css/resulted.css{{ weixin_debug }}" type=text/css rel=stylesheet>
+		<script type="text/javascript" src="{{ static_url }}mobile/js/Jquery-min-1.12.js{{ weixin_debug }}"></script>
+		<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script src="{{ static_url }}mobile/js/details.js{{ weixin_debug }}"></script>
+	</head>
+	<body>
+		
+		<header id="top_img" class="top_img1">
+			<img src="{{ static_url }}mobile/img/title3.png" />
+		</header>
+		<section id="main">
+			<div class="box box1">
+				<div class="box_wrap">
+					<div class="box_left">
+						<div class="box_img">
+							<img src=""/>
+						</div>
+						<p class="vote pro_name1">目前投票:<span></span></p>
+					</div>
+					<div class="box_right">
+						<p class="box_name No"></p>
+						<p class="work_name">作品名:<span></span></p>
+						<p class="author">作者:<span></span></p>
+						<p class="school_name">院校:<span></span></p>
+					</div>
+				</div>
+				<p class="details"><img src="{{ static_url }}mobile/img/dianzan.png" /></p>
+			</div>	
+			<p class="submit_back">
+				<em class="shake"><img src="{{ static_url }}mobile/img/shake.png" /></em>
+				<a href="works.html" ><img src="{{ static_url }}mobile/img/backList.png" /></a>
+			</p>
+		</section>
+		
+		<!--弹框提示-->
+		
+		<div class="dialog_wrap none">
+			<div class="dialog">
+				<div class="content">
+					<em><img src="{{ static_url }}mobile/img/ren.png"/></em>
+					<h1>您已投完票</h1>
+					<a class="close_a"><img src="{{ static_url }}mobile/img/qr.png"/></a>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!--弹框提示-->
+		
+		<div class="dialog_wrap1 none">
+			<div class="shake_dialog">
+				<em><img src="{{ static_url }}mobile/img/shakeText.png"/></em>
+				<em><img src="{{ static_url }}mobile/img/shakep.png"/></em>
+			</div>
+		</div>
+	</body>
+</html>

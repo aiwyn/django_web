@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>芬达-信息填写</title>
+		<link href="{{ static_url }}pc/css/public.css{{ weixin_debug }}" type=text/css rel=stylesheet>
+		<link href="{{ static_url }}pc/css/info.css{{ weixin_debug }}" type=text/css rel=stylesheet>
+		<script  src="{{ static_url }}pc/js/Jquery-min-1.12.js{{ weixin_debug }}"></script>
+		<script  src="{{ static_url }}pc/js/upload.js{{ weixin_debug }}"></script>
+	</head>
+	<body>
+		<!--上部分开始-->
+		<div id="wrap_top">
+			<div class="top_left">
+				<img src="{{ static_url }}pc/img/fenda.png">
+			</div>
+			<div class="top_center">
+				<i><img src="{{ static_url }}pc/img/title.png"/></i>
+				<i class="i_eq2"><img src="{{ static_url }}pc/img/text.png"/></i>
+			</div>
+			<div class="top_right">
+				
+				<a href="index.html"><img src="{{ static_url }}pc/img/back_index.png" /></a>
+			</div>
+		</div>
+		<!--上部分结束-->
+		
+		<!--中部分开始-->
+		<div id="wrap_center">
+			<!--左侧大图-->
+			<div class="center_left">
+				<h1><img src="{{ static_url }}pc/img/x-title.png"></h1>
+				<div class="pro_beg">
+					 <canvas id="canvas" width="310" height="425"></canvas>
+				</div>
+				<label class="reset_but">
+					<input type="file" class="none"  id="File" />
+					<img src="{{ static_url }}pc/img/upload.png" class="img1" />
+					<img src="{{ static_url }}pc/img/reset.png" class="img2 none"/>
+				</label>
+				<p>提示：作品格式为jpg，尺寸不能超过300kb</p>
+			</div>
+			
+			<!--右侧选项-->
+			<div class="center_right">
+				<div class="step_1">
+					<em><img src="{{ static_url }}pc/img/info_title.png"></em>
+				</div>
+				<table class="Table" cellpadding="0" cellspacing="0" >
+					<tr>
+						<td><img src="{{ static_url }}pc/img/name.png"/></td>
+						<td><input type="text" class="name"/></td>
+					</tr>
+					<tr>
+						<td><img src="{{ static_url }}pc/img/phone.png"/></td>
+						<td><input type="tel" class="phone"/></td>
+					</tr>
+					<tr>
+						<td><img src="{{ static_url }}pc/img/workName.png"/></td>
+						<td><input type="text" class="workName"/></td>
+					</tr>
+					<tr>
+						<td><img src="{{ static_url }}pc/img/yx.png"/></td>
+						<td><input type="text" class="yx"/></td>
+					</tr>
+				</table>
+			</div>
+			<!--点击提交-->
+			<p class="cj_submit"><em><img src="{{ static_url }}pc/img/confirm.png"></em></p>
+		</div>
+		<!--中部分结束-->
+		
+		<div id="wrap_footer"></div>
+		<!--弹框提示-->
+		
+		<div class="dialog_wrap none">
+			<div class="dialog">
+				<a class="close_a"><img src="{{ static_url }}pc/img/close.png"/></a>
+				<div class="content">
+					<em><img src="{{ static_url }}pc/img/nv.png"/></em>
+					<h1>请填写个人信息</h1>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="dialog_wrap1 none">
+			<div class="dialog">
+				<a class="close_a"><img src="{{ static_url }}pc/img/close.png"/></a>
+				<div class="content">
+					<em><img src="{{ static_url }}pc/img/nv.png"/></em>
+					<h1>上传尺寸不能超过300kb，并且格式为jpg的图片</h1>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

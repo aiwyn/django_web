@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>芬达-作品排行</title>
+		<link href="{{ static_url }}pc/css/public.css{{ weixin_debug }}" type=text/css rel=stylesheet>
+		<link href="{{ static_url }}pc/css/idangerous.swiper.css{{ weixin_debug }}" type=text/css rel=stylesheet>
+		<link href="{{ static_url }}pc/css/works.css{{ weixin_debug }}" type=text/css rel=stylesheet>
+		<script src="{{ static_url }}pc/js/Jquery-min-1.12.js{{ weixin_debug }}"></script>
+		<script src="{{ static_url }}pc/js/idangerous.swiper.min.js{{ weixin_debug }}"></script>
+		<script src="{{ static_url }}pc/js/works.js{{ weixin_debug }}"></script>
+	</head>
+	<body>
+		
+		<!--上部分开始-->
+		<a id="#top"></a>
+		<div id="wrap_top">
+			<div class="top_left">
+				<img src="{{ static_url }}pc/img/fenda.png">
+			</div>
+			<div class="top_center">
+				<i><img src="{{ static_url }}pc/img/title1.png"/></i>
+				<i class="i_eq2"><img src="{{ static_url }}pc/img/text.png"/></i>
+			</div>
+			<div class="top_right">
+				<a href="index.html"><img src="{{ static_url }}pc/img/back_index.png" /></a>
+			</div>
+		</div>
+		<!--上部分结束-->
+		<section id="main">
+			<div class="submit_pro">
+				<form action="" method="get">
+					<span><img src="{{ static_url }}pc/img/submit-tetx.png"/></span>
+					<input type="text" placeholder="作品编号,作品名称等" name="pro_name" />
+					<input type="submit" value="" />
+					<div class="radio">
+						<label>
+							<input type="radio" name="Radio"  checked="checked" class="rad1"/>
+							<p><span></span><em><img src="{{ static_url }}pc/img/renqi.png"/></em></p>
+						</label>
+						<label>
+							<input type="radio" name="Radio" class="rad2"/>
+							<p><span></span><em><img src="{{ static_url }}pc/img/new.png"/></em></p>
+						</label>
+					</div>
+				</form>
+			</div>
+			 <div class="device">
+			 	
+			    <div class="swiper-container">
+			      <div class="swiper-wrapper" id="Sw">
+			      	
+			      </div>
+			    </div>
+			     <div class="buts none">
+			     	<a class="arrow-left"><img src="{{ static_url }}pc/img/cj_left.png"/></a>
+			     	<a class="pagination"></a>
+			    	<a class="arrow-right"><img src="{{ static_url }}pc/img/cj_right.png"/></a>
+			     </div>
+			     <a class="back_a" href="#top"><img src="{{ static_url }}pc/img/backTop.png"/></a>
+		  </div>
+		</section>
+		
+		<div id="wrap_footer"></div>
+		
+		<!--弹框提示-->
+		
+		<div class="dialog_wrap none">
+			<div class="dialog">
+				<a class="close_a"><img src="{{ static_url }}pc/img/close.png"/></a>
+				<div class="content">
+					<em class="tu"><img src=""/></em>
+					<p class="pro_name1">目前投票:<span></span></p>
+					<p class="No"></p>
+					<p class="work_name">作品名:<span></span></p>
+			      	<p class="author">作者:<span></span></p>
+			      	<p class="school_name">院校名:<span></span></p>
+			      	<i class="vote"><img src="{{ static_url }}pc/img/toupiao.png"/></i>
+			      	<p class="tpts none">非常抱歉，你今天已经投过票了，请明天再来吧！</p>
+			      	<div class="shake">
+			      		<div class="bdsharebuttonbox">
+			      			<a href="#" class="bds_more" data-cmd="more"></a>
+			      			<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+			      			<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+			      			<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+			      			<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+			      		</div>
+						
+			      	</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

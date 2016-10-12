@@ -1,0 +1,7 @@
+.list_display_img {
+    height: 18px;
+}
+
+.list_display_img:hover {
+    cursor: pointer;
+}

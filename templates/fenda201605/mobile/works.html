@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title>芬达-作品排行</title>
+		<link href="{{ static_url }}mobile/css/public.css{{ weixin_debug }}" type=text/css rel=stylesheet>
+		<link href="{{ static_url }}mobile/css/idangerous.swiper.css{{ weixin_debug }}" type=text/css rel=stylesheet>
+		<link href="{{ static_url }}mobile/css/works.css{{ weixin_debug }}" type=text/css rel=stylesheet>
+		<script type="text/javascript" src="{{ static_url }}mobile/js/Jquery-min-1.12.js{{ weixin_debug }}"></script>
+		<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script src="{{ static_url }}mobile/js/wx-share.js"></script>
+		<script src="{{ static_url }}mobile/js/works.js{{ weixin_debug }}" ></script>
+		
+	</head>
+	<body>
+		
+		<header id="top_img">
+			<img src="{{ static_url }}mobile/img/title4.png" />
+		</header>
+		<section id="main">
+			<div class="submit_pro">
+				<form action="" method="get">
+					<span><img src="{{ static_url }}mobile/img/submit-tetx.png"/></span>
+					<input type="text" placeholder="作品编号,作品名称等" name="pro_name" />
+					<input type="submit" value="" />
+					<div class="radio">
+						<label>
+							<input type="radio" name="Radio"  checked="checked" class="rad1"/>
+							<p><span></span><em><img src="{{ static_url }}mobile/img/renqi.png"/></em></p>
+						</label>
+						<label>
+							<input type="radio" name="Radio" />
+							<p><span></span><em><img src="{{ static_url }}mobile/img/new.png"/></em></p>
+						</label>
+					</div>
+				</form>
+			</div>
+			 <div class="device">
+			 	
+			    <div class="swiper-container" style="width:100%; margin-bottom: 2%;">
+			      <div class="swiper-wrapper" id="Sw">
+					
+			      </div>
+			    </div>
+			     <div class="pagination none"></div>
+			     <div class="buts">
+			     	<a class="arrow-left"><img src="{{ static_url }}mobile/img/left.png"/></a>
+			     	<a class="back_a" href="index.html"><img src="{{ static_url }}mobile/img/back.png"/></a>
+			    	<a class="arrow-right"><img src="{{ static_url }}mobile/img/right.png"/></a>
+			     </div>
+		  </div>
+		</section>
+		
+		
+		
+	</body>
+</html>

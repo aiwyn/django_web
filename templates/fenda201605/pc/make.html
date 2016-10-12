@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>芬达-在线制作</title>
+		<link href="{{ static_url }}pc/css/public.css{{ weixin_debug }}" type=text/css rel=stylesheet>
+		<link href="{{ static_url }}pc/css/make.css{{ weixin_debug }}" type=text/css rel=stylesheet>
+		<script src="{{ static_url }}pc/js/Jquery-min-1.12.js{{ weixin_debug }}"></script>
+		<script src="{{ static_url }}pc/js/maquery.js{{ weixin_debug }}" type="text/javascript"></script>
+		<script src="{{ static_url }}pc/js/make.js{{ weixin_debug }}"></script>
+	</head>
+	<body>
+		<!--上部分开始-->
+		<div id="wrap_top">
+			<div class="top_left">
+				<img src="{{ static_url }}pc/img/fenda.png">
+			</div>
+			<div class="top_center">
+				<i><img src="{{ static_url }}pc/img/title.png"/></i>
+				<i class="i_eq2"><img src="{{ static_url }}pc/img/text.png"/></i>
+			</div>
+			<div class="top_right">
+				<a href="index.html"><img src="{{ static_url }}pc/img/back_index.png" /></a>
+			</div>
+		</div>
+		<!--上部分结束-->
+		
+		<!--中部分开始-->
+		<div id="wrap_center">
+			<!--左侧大图-->
+			<div class="center_left">
+				<h1><img src="{{ static_url }}pc/img/x-title.png"></h1>
+				<div class="pro_beg" id="pro_canvas">
+					 <canvas id="canvas"></canvas>
+				</div>
+				<div class="pro_beg" id="pro_img">
+					<img src="" id="final_img"/>
+				</div>
+				<a class="reset_but none" href="javascript:;"><img src="{{ static_url }}pc/img/reset.png"/></a>
+			</div>
+			
+			<!--右侧选项-->
+			<div class="center_right">
+				<div id="box1">
+				<div class="step_1">
+					<em><img src="{{ static_url }}pc/img/step1.png"></em>
+					<p class="small_pro">
+						<i><img id="bg1" src="{{ static_url }}pc/img/fd0.png" data-kit-style="static" data-kit-group="bg"  data-kit-index="1" class="kit"/></i>
+						<i><img src="{{ static_url }}pc/img/fd1.png" data-kit-group="bg" data-kit-style="static" data-kit-index="2" class="kit"/></i>
+					</p>
+				</div>
+				<!--脸型列表-->
+				<div class="steps" id="lcrboxslide_3">
+					<em><img src="{{ static_url }}pc/img/step4.png"></em>
+					<div class="steps_box">
+						<a class="but_left" id="leftArrindex_3"></a>
+						<a class="but_right" id="rightArrindex_3"></a>
+						<div class="solider_div" id="ISL_Cont_3">
+							<ul class="overview img_w">
+								<li><em><img src="{{ static_url }}pc/img/step4/step4-1.png" data-kit-group="face" data-kit-index="15" class="kit"></em></li>
+								<li><em><img src="{{ static_url }}pc/img/step4/step4-2.png" data-kit-group="face" data-kit-index="16" class="kit"></em></li>
+								<li><em><img src="{{ static_url }}pc/img/step4/step4-3.png" data-kit-group="face" data-kit-index="17" class="kit"></em></li>
+								<li><em><img src="{{ static_url }}pc/img/step4/step4-4.png" data-kit-group="face" data-kit-index="18" class="kit"></em></li>
+								<li><em><img src="{{ static_url }}pc/img/step4/step4-5.png" data-kit-group="face" data-kit-index="19" class="kit"></em></li>
+								<li><em><img src="{{ static_url }}pc/img/step4/step4-6.png" data-kit-group="face" data-kit-index="20" class="kit"></em></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<!--五官列表-->
+				<div class="steps" id="lcrboxslide_1">
+					<em><img src="{{ static_url }}pc/img/step2.png"></em>
+					<div class="steps_box">
+						<a class="but_left" id="leftArrindex_1"></a>
+						<a class="but_right" id="rightArrindex_1"></a>
+						<div class="solider_div" id="ISL_Cont_1">
+							<ul class="overview img_w">
+								<li><em><img src="{{ static_url }}pc/img/step2/step2-1.png" data-kit-group="study" data-kit-index="3" class="kit"></em></li>
+								<li><em><img src="{{ static_url }}pc/img/step2/step2-2.png" data-kit-group="study" data-kit-index="4" class="kit"></em></li>
+								<li><em><img src="{{ static_url }}pc/img/step2/step2-3.png" data-kit-group="study" data-kit-index="5" class="kit"></em></li>
+								<li><em><img src="{{ static_url }}pc/img/step2/step2-4.png" data-kit-group="study" data-kit-index="6" class="kit"></em></li>
+								<li><em><img src="{{ static_url }}pc/img/step2/step2-5.png" data-kit-group="study" data-kit-index="7" class="kit"></em></li>
+								<li><em><img src="{{ static_url }}pc/img/step2/step2-6.png" data-kit-group="study" data-kit-index="8" class="kit"></em></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--发型列表-->
+				<div class="steps" id="lcrboxslide_2">
+					<em><img src="{{ static_url }}pc/img/step3.png"></em>
+					<div class="steps_box">
+						<a class="but_left" id="leftArrindex_2"></a>
+						<a class="but_right" id="rightArrindex_2"></a>
+						<div class="solider_div" id="ISL_Cont_2">
+							<ul class="overview img_w">
+								<li><em><img src="{{ static_url }}pc/img/step3/step3-1.png" data-kit-group="hair" data-kit-index="9" class="kit"></em></li>
+								<li><em><img src="{{ static_url }}pc/img/step3/step3-2.png" data-kit-group="hair" data-kit-index="10" class="kit"></em></li>
+								<li><em><img src="{{ static_url }}pc/img/step3/step3-3.png" data-kit-group="hair" data-kit-index="11" class="kit"></em></li>
+								<li><em><img src="{{ static_url }}pc/img/step3/step3-4.png" data-kit-group="hair" data-kit-index="12" class="kit"></em></li>
+								<li><em><img src="{{ static_url }}pc/img/step3/step3-5.png" data-kit-group="hair" data-kit-index="13" class="kit"></em></li>
+								<li><em><img src="{{ static_url }}pc/img/step3/step3-6.png" data-kit-group="hair" data-kit-index="14" class="kit"></em></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				</div>
+				
+				<div id="box2" class="none">
+					<div class="step_1">
+						<em><img src="{{ static_url }}pc/img/info_title.png"></em>
+					</div>
+					<table class="Table" cellpadding="0" cellspacing="0" >
+						<tr>
+							<td><img src="{{ static_url }}pc/img/name.png"/></td>
+							<td><input type="text" class="name"/></td>
+						</tr>
+						<tr>
+							<td><img src="{{ static_url }}pc/img/phone.png"/></td>
+							<td><input type="tel" class="phone"/></td>
+						</tr>
+						<tr>
+							<td><img src="{{ static_url }}pc/img/workName.png"/></td>
+							<td><input type="text" class="workName"/></td>
+						</tr>
+						<tr>
+							<td><img src="{{ static_url }}pc/img/yx.png"/></td>
+							<td><input type="text" class="yx"/></td>
+						</tr>
+					</table>
+						
+				</div>
+			</div>
+			<!--点击提交-->
+			<p class="cj_submit sub1" id="final_but"><em><img src="{{ static_url }}pc/img/cj_submit.png"></em></p>
+			<p class="cj_submit sub2 none"><em><img src="{{ static_url }}pc/img/confirm.png"></em></p>
+		</div>
+		<!--中部分结束-->
+		
+		<div id="wrap_footer"></div>
+		<!--弹框提示-->
+		
+		<div class="dialog_wrap none">
+			<div class="dialog">
+				<a class="close_a"><img src="{{ static_url }}pc/img/close.png"/></a>
+				<div class="content">
+					<em><img src="{{ static_url }}pc/img/nv.png"/></em>
+					<h1></h1>
+				</div>
+			</div>
+		</div>
+		
+		<script src="{{ static_url }}pc/js/FabricCustom.js{{ weixin_debug }}"></script>
+    	<script src="{{ static_url }}pc/js/DIYCanvas.js{{ weixin_debug }}"></script>
+	</body>
+</html>

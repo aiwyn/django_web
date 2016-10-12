@@ -1,0 +1,84 @@
+
+#active{
+	 width: 100%;
+	 overflow: hidden;
+	 margin-bottom: 2%;
+}
+#active i{
+	width: 60%;
+	display: block;
+	float: right;
+	margin-right: 12%;
+	margin-top: -5%;
+}
+.main_box{
+	width: 90%;
+	overflow: hidden;
+	margin: auto;
+	height: 36%;
+}
+
+.device{
+	width: 100%;
+	height: 100%;
+}
+.swiper-wrapper{
+	float: left;
+}
+.swiper-wrapper li em{
+	display: block;
+}
+.swiper-wrapper li{
+	width:100%;
+	float: left;
+}
+.pagination{
+	text-align: center;
+	padding-top:5%;
+}
+.pagination span{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: #7f6d06;
+	border-radius: 5px;
+	margin: 0px 3%;
+
+}
+.pagination span.swiper-active-switch{
+	background-color: #fed90c;
+}
+
+footer{
+	padding-top: 6%;
+	width: 90%;
+	margin: auto;
+}
+footer p{
+	text-align: center;
+	overflow: hidden;
+	width: 100%;
+}
+footer p i{
+	width: 46%;
+	display: block;
+}
+footer p i:first-child{
+	float: left;
+}
+footer p i:last-of-type{
+	float: right;
+}
+footer a{
+	display: block;
+	width: 30%;
+	margin:5% auto 0px;
+}
+.footer_logo{
+	position: absolute;
+	right:3%;
+	width: 10%;
+	bottom: 1%;
+}
+
+

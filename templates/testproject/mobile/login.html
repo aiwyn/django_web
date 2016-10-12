@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title>用户登录</title>
+		<link href="{{ static_url }}css/core.css" rel="stylesheet" type="text/css">
+		<link href="{{ static_url }}css/login.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<section id="box">
+			<input type="tel" class="phone" placeholder="请输入手机号"/>
+			<input type="password" class="pass" placeholder="请输入密码" />
+			<a href="#" class="zhmi none">找回密码</a>
+			<a id="login_p">用户登录</a>
+			<a id="reg_p" href="activeregister">没有账号？立即注册</a>
+		</section>
+		
+		<script src="{{ static_url }}js/plugins/zepto.min.js"></script>
+		<script src="{{ static_url }}js/plugins/zepto.cookie.min.js"></script>
+		<script src="{{ static_url }}js/plugins/zepto.fx.min.js"></script>
+		<script src="{{ static_url }}js/plugins/zepto.selector.min.js"></script>
+		<script src="{{ static_url }}js/plugins/md5.js"></script>
+		<script src="{{ static_url }}js/plugins/common.js"></script>
+		<script src="{{ static_url }}js/app/login.js"></script>
+		
+	</body>
+</html>

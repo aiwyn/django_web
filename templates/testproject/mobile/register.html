@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width,  user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title>用户注册</title>
+		<link href="{{ static_url }}css/core.css" rel="stylesheet" type="text/css">
+		<link href="{{ static_url }}css/login.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<section id="box">
+			<div id="display">
+				<canvas id="canvas" width="60" height="60"></canvas>
+				<label><input type="file" id="File" class="none">上传头像</label>
+			</div>
+			<input type="text" class="name"  placeholder="请输入用户名"/>
+			<input type="password" class="pass" placeholder="请输入密码" />
+			<input type="tel" class="phone"  placeholder="请输入手机号"/>
+			<input type="text" class="address"  placeholder="请输入地址"/>
+			<p id="sex">
+				<label for="radio1"><input type="radio" value="10" name="sex" id="radio1"/>男</label>
+				<label for="radio2"><input type="radio" value="20" name="sex" id="radio2"/>女</label>
+				<label for="radio3"><input type="radio" value="0" name="sex" id="radio3" checked="checked"/>保密</label>
+			</p>
+			
+			
+			<a id="login_p">确认注册</a>
+			<a id="reg_p" href="activelogin">已有账号，立即登陆</a>
+		</section>
+		
+		<script src="{{ static_url }}js/plugins/zepto.min.js"></script>
+		<script src="{{ static_url }}js/plugins/zepto.cookie.min.js"></script>
+		<script src="{{ static_url }}js/plugins/zepto.fx.min.js"></script>
+		<script src="{{ static_url }}js/plugins/zepto.selector.min.js"></script>
+		<script src="{{ static_url }}js/plugins/md5.js"></script>
+		<script src="{{ static_url }}js/plugins/common.js"></script>
+		 <script src="{{ static_url }}js/plugins/exif.js"></script>
+	    <script src="{{ static_url }}js/plugins/PhotoCanvas.js"></script>
+		<script src="{{ static_url }}js/app/register.js"></script>
+		
+	</body>
+</html>

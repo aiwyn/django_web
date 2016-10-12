@@ -1,0 +1,198 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	max-width: 768px;
+	min-width: 320px;
+	margin: auto;
+	background-color:  #000;
+}
+body{
+	position: relative;
+	overflow: hidden;
+	background-color: #000;
+}
+#swipe1{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	background: url(../img/mark_bj.jpg) no-repeat center top;
+	background-size: 100% 100%;
+	position: relative;
+	z-index: 1;
+}
+.logo{
+	width: 100%;
+}
+#fenshu{
+	width: 100%;
+	background: url(../img/mark4.png) no-repeat center;
+	background-size: 90%;
+	position: relative !important;
+	z-index: 2;
+}
+#fenshu i{
+	display: block;
+	margin: auto;
+}
+#fenshu>i:nth-child(1){
+	width: 50%;
+	padding-top: 15%;
+	position: relative;
+	z-index: 3;
+}
+#fenshu>i:nth-child(2){
+	width: 12%;
+	position: absolute;
+	left:50%;
+	margin-left: -6%;
+	top:5%;
+	-webkit-transform-origin: center bottom;
+	
+}
+#fenshu>i:last-of-type{
+	position: relative;
+	z-index: 2;
+	width: 60%;
+}
+#fenshu aside{
+	padding-top: 11%;
+	text-align: center;
+	width:80%;
+	display: block;
+	margin:0px auto 8%;
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+}
+.last_i{
+	display: block;
+	width: 10%;
+	margin: auto;
+}
+.last_i img{
+	-webkit-animation: Top 0.8s infinite alternate;
+}
+@-webkit-keyframes Top{
+	0%{
+		-webkit-transform: translateY(-20px);
+		opacity: 1;
+	}
+	100%{
+		-webkit-transform: translateY(0px);
+		opacity: 0.3;
+	}
+}
+#fenshu aside i{
+	display: inline-block;
+	width: 30%;
+}
+
+#swipe2{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: url(../img/mark9.jpg) no-repeat center;
+	background-size: 100% 100%;
+	position: absolute;
+	top:100%;
+	left:0px;
+	z-index: 10;
+	-webkit-transition: top 1s cubic-bezier(0,1.1,1,-0.62) ;
+}
+#logo2{
+	width: 80%;
+	text-align: center;
+	margin: auto;
+	position: relative;
+}
+#logo2 i{
+	display: inline-block;
+	width: 56%;
+}
+#logo2 i:nth-child(1){
+	position: absolute;
+	right:7%;
+	top:3%;
+	width: 19%;
+	-webkit-transform-origin: left bottom ;
+	-webkit-animation: yao 1s infinite alternate;
+}
+@-webkit-keyframes yao{
+	0%{
+		-webkit-transform:rotate(10deg);
+	}
+	100%{
+		-webkit-transform:rotate(-10deg);
+	}
+}
+
+#logo2 i:nth-child(2){
+	padding-top: 11%;
+}
+
+#buts{
+	margin-top: -5%;
+	padding-top: 10%;
+	width: 100%;
+	height: 54%;
+	overflow: hidden;
+	background: url(../img/mark8.png) no-repeat right top;
+	background-size:cover;
+}
+#buts a{
+	font-size: 40px;
+	text-indent: -999px;
+	margin:0px auto 18%;
+	float: right;
+	display: block;
+	width: 70%;
+	transform: skew(10deg,-10deg);
+}
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 500px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	#fenshu{
+		margin-top: -5%;
+	}
+	
+	#buts{
+		padding-top: 5%;
+		height: 54%;
+	}
+	#buts a{
+		margin:0px auto 9%;
+		font-size: 36px;
+		width: 70%;
+	}
+	
+}
+
+@media screen
+and (min-device-width : 320px)
+and (max-device-height : 568px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	#fenshu{
+		margin-top: -5%;
+	}
+	#buts{
+	padding-top: 8%;
+	}
+	#buts a{
+		font-size: 35px;
+		margin:0px auto 9%;
+	}
+}
+
+
+@media screen
+and (min-device-width : 768px)
+and (max-device-height : 1024px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	#fenshu{
+		margin-top: -12%;
+	}
+}

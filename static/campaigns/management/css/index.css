@@ -1,0 +1,51 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: 0px !important;
+}
+#box{
+	padding-top: 4%;
+	width: 90%;
+	margin: auto;
+}
+#box i{
+	display: block;
+	width: 60px;
+	height: 60px;
+	margin: auto;
+	margin-bottom: 4%;
+	border:1px solid #CCCCCC;
+	border-radius: 30px;
+	overflow: hidden;
+}
+#box i img{
+	width: 100%;
+	height: 100%;
+}
+.info p{
+	padding: 2% 4%;
+	color:#CCCCCC;
+	font-size: 16px;
+	border-bottom: 1px solid #DEDEDE;
+}
+.info p span{
+	margin-left: 4%;
+	font-size: 14px;
+	color:#808080;
+}
+.info p.buts{
+	width: 50%;
+	margin: auto;
+	background-color: #4EABE8;
+	height: 30px;
+	text-align: center;
+	color:#fff;
+	font-size: 16px;
+	border-radius: 10px;
+	line-height: 30px;
+}
+.info p.signend{
+	background-color: #D2CCC7;
+	color:#333333;
+}

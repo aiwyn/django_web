@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densitydpi=medium-dpi, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no" />
+		<title>芬达-制作结果</title>
+		<link href="{{ static_url }}pc/css/public.css{{ weixin_debug }}" type=text/css rel=stylesheet>
+		<link href="{{ static_url }}pc/css/resulted.css{{ weixin_debug }}" type=text/css rel=stylesheet>
+		<script  src="{{ static_url }}pc/js/Jquery-min-1.12.js{{ weixin_debug }}"></script>
+		<script src="{{ static_url }}pc/js/details.js{{ weixin_debug }}"></script>
+	</head>
+	<body>
+		
+		<!--上部分开始-->
+		<div id="wrap_top">
+			<div class="top_left">
+				<img src="{{ static_url }}pc/img/fenda.png">
+			</div>
+			<div class="top_center">
+				<i><img src="{{ static_url }}pc/img/title.png"/></i>
+				<i class="i_eq2"><img src="{{ static_url }}pc/img/text.png"/></i>
+			</div>
+			<div class="top_right">
+				<a href="index.html"><img src="{{ static_url }}pc/img/back_index.png" /></a>
+			</div>
+		</div>
+		<!--上部分结束-->
+		<section id="main">
+			<div class="box box1">
+				<div class="bt">
+					<img src="{{ static_url }}pc/img/uploadSess.png"/>
+				</div>
+				<div class="box_wrap">
+					<div class="box_left">
+						<div class="box_img">
+							<img src="{{ static_url }}pc/img/fd0.png"/>
+						</div>
+						<p class="vote pro_name1">目前投票:<span></span></p>
+					</div>
+					<div class="box_right">
+						<p class="box_name No"></p>
+						<p class="work_name">作品名:<span></span></p>
+						<p class="author">作者:<span></span></p>
+						<p class="school_name">院校:<span></span></p>
+						<div class="fx"><i><img src="{{ static_url }}pc/img/fx.png"/></i>
+							<div class="WL">
+							<div class="bdsharebuttonbox">
+				      			<a href="#" class="bds_more" data-cmd="more"></a>
+				      			<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+				      			<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+				      			<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+				      			<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+				      		</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<p class="submit_back">
+				<a href="works.html" ><img src="{{ static_url }}pc/img/backList.png" /></a>
+			</p>
+		</section>
+		
+		
+		<div id="wrap_footer"></div>
+	</body>
+</html>

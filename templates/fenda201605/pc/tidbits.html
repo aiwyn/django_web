@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>芬达-活动花絮</title>
+		<link href="{{ static_url }}pc/css/public.css{{ weixin_debug }}" type=text/css rel=stylesheet>
+		<link href="{{ static_url }}pc/css/tidbits.css{{ weixin_debug }}" type=text/css rel=stylesheet>
+		<script  src="{{ static_url }}pc/js/Jquery-min-1.12.js{{ weixin_debug }}"></script>
+		<script  charset="utf-8" src="{{ static_url }}pc/js/mousewheel.js{{ weixin_debug }}"></script>
+		<script  charset="utf-8" src="{{ static_url }}pc/js/easyscroll.js{{ weixin_debug }}"></script>
+		<script  src="{{ static_url }}pc/js/tidbits.js{{ weixin_debug }}"></script>
+	</head>
+	<script type="text/javascript">
+		$(function(){
+			$('.div_scroll').scroll_absolute({arrows:true})
+		});
+	</script>
+	<body>
+		<!--上部分开始-->
+		<div id="wrap_top">
+			<div class="top_left">
+				<img src="{{ static_url }}pc/img/fenda.png">
+			</div>
+			<div class="top_center">
+				<i><img src="{{ static_url }}pc/img/title-hx.png"/></i>
+			</div>
+			<div class="top_right">
+				<a href="index.html"><img src="{{ static_url }}pc/img/back_index.png" /></a>
+			</div>
+		</div>
+		<!--上部分结束-->
+		
+		<!--中部开始-->
+		<div id="tidbits">
+			<div class="container1">
+				<div class="div_scroll">
+					<div style="margin-top:-12px; float:left; height:auto; width:auto">
+					<ul class="tib_ul div_scroll">
+						<!--<li>
+							<i><img src="{{ static_url }}pc/img/hx/img-1.png" alt="" /></i>
+							<p>花絮花絮花絮</p>
+						</li>-->
+						
+					</ul>
+				</div>
+			</div>
+			</div>
+		</div>
+		
+		<!--弹框-->
+		<div class="dialog_wrap none">
+			<div class="dialog">
+				<a class="close_a"><img src="{{ static_url }}pc/img/close.png"/></a>
+				<div class="content">
+					<em><img src="{{ static_url }}pc/"/></em>
+					<h1></h1>
+					<p></p>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!--中部结束-->
+		
+		<div id="wrap_footer"></div>
+	</body>
+</html>
