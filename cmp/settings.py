@@ -103,17 +103,17 @@ WSGI_APPLICATION = 'cmp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'test',
-        'USER': 'postgres',
-        'PASSWORD': 'Hytestsql',
-        'HOST': '192.168.100.250',
-        'PORT': '5432'
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': ''
     }
 }
 CACHES = {
     'default': {
         'BACKEND': 'redis_cache.cache.RedisCache',
-        'LOCATION': '127.0.0.1:6379',
+        'LOCATION': '',
         'OPTIONS': {
             "CLITEN_CLASS": "redis_cache.client.DefaultClient"
         },
